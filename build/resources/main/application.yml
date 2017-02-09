@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+#TODO: figure out why I need this here and in bootstrap.yml
+spring:
+  application:
+    name: TestBootAppFromProp
+
+ribbon:
+  ServerListRefreshInterval: 1000
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+
+
+  #http://containertutorials.com/docker-compose/spring-boot-app.html
